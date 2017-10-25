@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="#" />
+
+    <title>esfei</title>
+
+    <!--Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-reset.css" rel="stylesheet" />
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style-responsive.css" rel="stylesheet" />
+	
+	<!--Date picker-->
+	<link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+	<link rel="stylesheet" type="text/css" href="css/datetimepicker.css" />
+	
+		
+	<!--Select 2-->
+    <link href="css/select2.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+         <section id="container">
+        <!--header start-->
+        <header class="header fixed-top clearfix">
+            <!--logo start-->
+            <div class="brand">
+                <div class="sidebar-toggle-box">
+                    <div class="fa fa-bars "></div>
+                </div>
+                <h2 class="brand-text">SMDM</h2>
+            </div>
+            <!--logo end-->
+            <!--  notification start -->
+            <!--  notification end -->
+
+            <div class="top-nav clearfix">
+                <!--search & user info start-->
+                <ul class="nav pull-right top-menu">
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="images/avatar1_small.jpg">
+                            <span class="username">John Doe</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                    <!-- right sidebar button start -->
+                    <li>
+                        <div class="toggle-right-box">
+                            <div class="fa fa-bars"></div>
+                        </div>
+                    </li>
+                    <!-- right sidebar button end -->
+                </ul>
+                <!--search & user info end-->
+            </div>
+        </header>
+        <!--header end-->
+        <aside>
+            <div id="sidebar" class="nav-collapse">
+                <!-- sidebar menu start-->
+                <div class="leftside-navigation">
+                    <ul class="sidebar-menu" id="nav-accordion">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-dashboard"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <!-- <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="#">Institute Information</a></li>
+                    <li><a href="#">Institute Section</a></li>
+                    <li><a href="#">Department Of Employee</a></li>
+                    <li><a href="#">Designation</a></li>
+                    <li><a href="#">Relagion</a></li>
+                </ul>
+            </li>-->
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="fa fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-university"></i>
+                                        <span>Institute</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="institute_details.html">Details</a>
+                                        </li>
+                                        <li><a href="institute_section.html">Section</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-users"></i>
+                                        <span>Employee</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="emp_department.html">Department of employee</a>
+                                        </li>
+                                        <li><a href="emp_designation.html">Designation</a>
+                                        </li>
+                                        <li><a href="relagion.html">Employee/Student Relagion</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-graduation-cap"></i>
+                                        <span>Academic</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="class.html">Class</a>
+                                        </li>
+                                        <li><a href="section_of_class.html">Section of class</a>
+                                        </li>
+                                        <li><a href="student_department.html">Department of student</a>
+                                        </li>
+                                        <li><a href="subject.html">Subject</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-book"></i>
+                                        <span>Exam</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="exam_type.html">Exam Type</a>
+                                        </li>
+                                        <li><a href="semester.html">Semester</a>
+                                        </li>
+                                        <li><a href="gpa.html">GPA</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-hdd-o"></i>
+                                        <span>Store Inventory</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="item_type_and_unit.html">Add Item Type and Unit</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-envelope-o"></i>
+                                        <span>SMS/Email</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="sms_email_url.html">URL</a>
+                                        </li>
+                                        <li><a href="sms_email_sending_option.html">Sending Option</a>
+                                        </li>
+                                        <li><a href="sms_email_receiver.html.html">Receiver</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="fa fa-users"></i>
+                                <span>Employee</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="add_employee.html">Add Employee</a>
+                                </li>
+                                <li><a href="emp_list.html">Employee List</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="fa fa-user-o"></i>
+                                <span>Student</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="student_admission.html">Student Admission</a>
+                                </li>
+                                <li><a href="student_list.html">Student List</a>
+                                </li>
+                                <li><a href="student _committe_name.html">Add Student Committee Name</a>
+                                </li>
+                                <li><a href="student _committee_details.html">Add Student Committee Member</a>
+                                    <li><a href="student _club_name.html">Add Student Club Name</a>
+                                    </li>
+                                    <li><a href="student _club_details.html">Add Student Club Member</a>
+                            </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-graduation-cap"></i>
+                                    <span>Academic</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="academic_year.html">Academic year</a>
+                                    </li>
+                                    <li><a href="#">Certification</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-book"></i>
+                                    <span>Exam</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="result_generate.html">Result Generate</a>
+                                    </li>
+									 <li><a href="result_view">Result View</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+								<a href="sms_and_email.html">
+									<i class="fa fa-envelope-o"></i>
+									<span>SMS/Email</span>
+								</a>
+							</li>
+							
+                            <li>
+                                <a href="attendence.html">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    <span>Attendence</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-hdd-o"></i>
+                                    <span>Store Management</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="add_item_name.html">Add Item Name</a>
+                                    </li>
+                                    <li><a href="add_item_record.html">Item Record</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="library.html">
+                                    <i class="fa fa-book"></i>
+                                    <span>Library Management</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-hdd-o"></i>
+                                    <span>Asset Management</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="asset_type.html">Add Asset Type</a>
+                                    </li>
+                                    <li><a href="add_asset.html">Add Asset</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-money"></i>
+                                    <span>Finance</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="#">One</a>
+                                    </li>
+                                    <li><a href="#">Two</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-users"></i>
+                                    <span>Managing Committe</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="managing _committe_name.html">Add Committee Name</a>
+                                    </li>
+                                    <li><a href="managing _committee_details.html">Add Committee Member</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-file-o"></i>
+                                    <span>Report</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="#">One</a>
+                                    </li>
+                                    <li><a href="#">Two</a>
+                                    </li>
+                                </ul>
+                            </li>
+                    </ul>
+                </div>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <!-- page start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <section class="panel">
+                            <header class="panel-heading">
+                                Student Admission
+                                <!-- <span class="tools pull-right">
+                                <a class="fa fa-chevron-down" href="javascript:;"></a>
+                                <a class="fa fa-cog" href="javascript:;"></a>
+                                <a class="fa fa-times" href="javascript:;"></a>
+                             </span> -->
+                            </header>
+                            <div class="panel-body">
+                                <div class="">
+                                    <form role="form">
+                                        <div class="row">
+                                            
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title" ><b>OFFICIAL DETAILS</b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+                                            <div class="form-group col-lg-12">
+											    <div class="form-group col-lg-3">
+                                                    <label>Admission Date <span class="required-star"></span></label>
+													<div class="input-group ">
+														<input type="text" class="form-control input-medium default-date-picker"  size="16">
+																<span class="input-group-btn">
+																<button type="button" class="btn btn-primary "><i class="fa fa-calendar"></i></button>
+																</span>
+													</div>
+                                                </div>
+                                                <div class="form-group col-lg-3">
+                                                    <label>Academic Year <span class="required-star"></span></label>
+                                                     <select class="form-control init-select2" id="">
+													  <option value="volvo">20013</option>
+													  <option value="saab">Faculty</option>
+													  <option value="mercedes">IT</option>
+													</select>
+                                                </div>
+                                                <div class="form-group col-lg-3">
+                                                    <label>Department <span class="required-star"></span></label>
+                                                     <select class="form-control init-select2" id="">
+													  <option value="volvo">Science</option>
+													  <option value="saab">Faculty</option>
+													  <option value="mercedes">IT</option>
+													</select>
+                                                </div>
+                                               <div class="form-group col-lg-3">
+                                                    <label>Class <span class="required-star"></span> </label>
+                                                     <select class="form-control init-select2" id="">
+													  <option value="volvo">One</option>
+													  <option value="saab">Two</option>
+													  <option value="mercedes">IT</option>
+													</select>
+                                                </div>
+                                                <div class="form-group col-lg-3">
+                                                    <label>Secton </label>
+                                                     <select class="form-control init-select2" id="">
+													  <option value="volvo">Account</option>
+													  <option value="saab">Faculty</option>
+													  <option value="mercedes">IT</option>
+													</select>
+                                                </div>
+												<div class="form-group col-lg-3">
+                                                    <label>Poor Fund <span class="required-star"></span></label>
+                                                     <select class="form-control init-select2" id="">
+													  <option value="">Yes</option>
+													  <option value="">No</option>
+													</select>
+                                                </div>
+                                              
+
+                                                
+
+                                            </div>
+											
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title"><b>PERSONAL DETAILS</b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+											 <div class="form-group col-lg-9">
+                                            <div class="form-group col-lg-12">
+											    <div class="form-group col-lg-6">
+                                                    <label>Name <span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-3">
+                                                   <label>Relagion <span class="required-star">*</span> 
+                                                    </label>
+                                                    <select class="form-control init-select2" id="">
+													  <option value="volvo">Islam</option>
+													  <option value="saab">Female</option>
+													  <option value="mercedes">Other</option>
+													</select>
+                                                </div>
+												<div class="form-group col-lg-3">
+                                                   <label>Gender <span class="required-star">*</span> 
+                                                    </label>
+                                                    <select class="form-control init-select2" id="">
+													  <option value="volvo">Male</option>
+													  <option value="saab">Female</option>
+													  <option value="mercedes">Other</option>
+													</select>
+                                                </div>
+                                                <div class="form-group col-lg-4">
+                                                    <label>Date of birth <span class="required-star"></span></label>
+													<div class="input-group ">
+														<input type="text" class="form-control input-medium default-date-picker"  size="16">
+																<span class="input-group-btn">
+																<button type="button" class="btn btn-primary "><i class="fa fa-calendar"></i></button>
+																</span>
+													</div>
+                                                </div>
+                                                <div class="form-group col-lg-4">
+                                                   <label>Place Of Birth <span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                   <label>Birth Certificate Number <span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+                                            </div>
+											</div>
+											 <div class="form-group col-lg-3" style="">
+                                                <div class="form-group col-lg-12">
+                                                    <img id="imgLogo" src="images/institute.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="150" />
+                                                    <label>Upload student image </label>
+                                                    <input type="file" class="form-control" id="logo" />
+                                                </div>
+                                            </div>
+											
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title"><b>Contact DETAILS</b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+                                            <div class="form-group col-lg-12">
+											    <div class="form-group col-lg-6">
+                                                    <label>Permanent Address <span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-6">
+                                                    <label>Present Address <span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												
+												<div class="form-group col-lg-4">
+                                                    <label>Mobile<span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Email<span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="email" class="form-control" id="" />
+                                                </div>
+												
+                                            </div>
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title"><b>Emergency Contact </b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+                                            <div class="form-group col-lg-12">
+											    
+												
+												<div class="form-group col-lg-4">
+                                                    <label>Name<span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Mobile<span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												
+                                            </div>
+											
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title"><b>FATHERS DETAILS</b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+                                            <div class="form-group col-lg-12">
+											    <div class="form-group col-lg-4">
+                                                    <label>Name <span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>NID Number <span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Mobile<span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Email<span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="email" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Occupation<span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+                                            </div>
+											
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title"><b>MOTHERS DETAILS</b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+                                            <div class="form-group col-lg-12">
+											    <div class="form-group col-lg-4">
+                                                    <label>Name <span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>NID Number 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Mobile
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Email
+                                                    </label>
+                                                    <input type="email" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Occupation
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+                                            </div>
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title"><b>Gurdian DETAILS</b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+                                            <div class="form-group col-lg-12">
+
+											    <div class="form-group col-lg-2">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox"> Father as gurdian
+														</label>
+													</div>
+													
+                                                </div>
+												<div class="form-group col-lg-2">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox"> Mother as gurdian
+														</label>
+													</div>
+                                                </div>
+												<div class="clearfix">
+												</div>
+											    <div class="form-group col-lg-4">
+                                                    <label>Name <span class="required-star">*</span> 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>NID Number 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Mobile
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Email
+                                                    </label>
+                                                    <input type="email" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Occupation
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+                                            </div>
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title"><b>Scholarship DETAILS</b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+                                            <div class="form-group col-lg-12">
+											    <div class="form-group col-lg-3">
+                                                    <label>Class 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-3">
+                                                    <label>Year
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-3">
+                                                    <label>Roll
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-3">
+                                                    <label>Position
+                                                    </label>
+                                                    <input type="email" class="form-control" id="" />
+                                                </div>
+												
+                                            </div>
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title"><b>Stipulation DETAILS</b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+                                            <div class="form-group col-lg-12">
+											    <div class="form-group col-lg-3">
+                                                    <label>Id Number 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-3">
+                                                    <label>Booth Name
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-6">
+                                                    <label>Institute Name
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+												<label>Division </label>
+                                                     <select class="form-control init-select2" id="">
+													  <option value="volvo">Account</option>
+													  <option value="saab">Faculty</option>
+													  <option value="mercedes">IT</option>
+													</select>
+												</div>
+												<div class="form-group col-lg-4">
+												<label>District </label>
+                                                     <select class="form-control init-select2" id="">
+													  <option value="volvo">Account</option>
+													  <option value="saab">Faculty</option>
+													  <option value="mercedes">IT</option>
+													</select>
+												</div>
+												<div class="form-group col-lg-4">
+												<label>Thana </label>
+                                                     <select class="form-control init-select2" id="">
+													  <option value="volvo">Account</option>
+													  <option value="saab">Faculty</option>
+													  <option value="mercedes">IT</option>
+													</select>
+												</div>
+												
+                                            </div>
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title"><b>Previous Education DETAILS</b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+                                            <div class="form-group col-lg-12">
+											    <div class="form-group col-lg-4">
+                                                    <label>Qualification/Class 
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-2">
+                                                    <label>Year
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-3">
+                                                    <label>Roll Number
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-3">
+                                                    <label>Registration Number
+                                                    </label>
+                                                    <input type="email" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Programme
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Institute
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class="form-group col-lg-4">
+                                                    <label>Board
+                                                    </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+                                            </div>
+											<div class=" col-lg-12">
+											    <div class=" col-lg-12">
+											      <p class="div-title"><b>Siblings Details </b></p>
+												  <hr class="title-underline">
+												</div>
+											</div>
+											<div class="input_fields_wrap">
+												<div class="form-group col-lg-12 " >
+													<div class="form-group col-lg-3 ">
+														<label>Name
+														</label>
+														<input type="text" class="form-control" id="" />
+													</div>
+													<div class="form-group col-lg-4 institute_wrap">
+														<label>Institute
+														</label>
+														<input type="text" class="form-control" id="" />
+													</div>
+													<div class="form-group col-lg-2">
+													<label>Class </label>
+														 <select class="form-control init-select2" id="">
+														  <option value="volvo">Account</option>
+														  <option value="saab">Faculty</option>
+														  <option value="mercedes">IT</option>
+														</select>
+													</div>
+													<div class="form-group col-lg-2">
+													<label>Gender </label>
+														 <select class="form-control init-select2" id="">
+														  <option value="volvo">Male</option>
+														  <option value="saab">Female</option>
+														  <option value="mercedes">IT</option>
+														</select>
+													</div>
+													<div class=" col-lg-1">
+														<button class="btn btn-success btn-sm plus-button add_field_button"><i class="fa fa-plus"></i> </button>
+													</div>
+													<div class="form-group ">
+                                                    <div class=" col-lg-12">
+                                                        <button class="btn btn-primary" type="submit">Save</button>
+                                                        <button class="btn btn-default" type="button">Cancel</button>
+                                                    </div>
+                                                </div>
+													
+												</div>
+                                            </div>
+                                        </div>
+                                    </form>
+								
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- page end-->
+            </section>
+        </section>
+        <!--main content end-->
+        <!--right sidebar start-->
+      
+        <!--right sidebar end-->
+
+    </section>
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!--Core js-->
+     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+ 
+
+
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_bn_BD.js"></script>
+    
+    <!--this page script-->
+    <script src="js/validation-init.js"></script>
+	
+	<!--select 2-->
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	
+	 <!--Date picker-->
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+    
+	<!--common script init for all pages-->
+    <script src="js/scripts.js"></script>
+
+<script>
+	
+
+    var max_fields = 10; //maximum input boxes allowed
+    var wrapper = $(".input_fields_wrap"); //Fields wrapper
+    var add_button = $(".add_field_button"); //Add button ID
+
+
+    var x = 1; //initlal text box count+
+	
+	
+    $(add_button).click(function(e) { //on add input button click
+        e.preventDefault();
+		//console.log(wrapper);
+		var pc = '';
+        if (x < max_fields) { //max input box allowed
+            x++; //text box increment
+			
+			pc+='<div class="form-group col-lg-12 " >';
+			pc+='<div class="form-group col-lg-3 ">';
+			pc+='<label>Name';
+			pc+='</label>';
+			pc+='<input type="text" class="form-control" id="" />';
+			pc+='</div>';
+			pc+='<div class="form-group col-lg-4 institute_wrap">';
+			pc+='<label>Institute';
+			pc+='</label>';
+			pc+='<input type="text" class="form-control" id="" />';
+			pc+='</div>';
+			pc+='<div class="form-group col-lg-2">';
+			pc+='<label>Class </label>';
+			pc+='<select class="form-control init-select2" id="">';
+			pc+='<option value="volvo">Account</option>';
+			pc+='<option value="saab">Faculty</option>';
+			pc+='<option value="mercedes">IT</option>';
+			pc+='</select>';
+			pc+='</div>';
+			pc+='<div class="form-group col-lg-2">';
+			pc+='<label>Gender </label>';
+			pc+='<select class="form-control init-select2" id="">';
+			pc+='<option value="volvo">Male</option>';
+			pc+='<option value="saab">Female</option>';
+			pc+='<option value="mercedes">IT</option>';
+			pc+='</select>';
+			pc+='</div>';
+			pc+='<div class=" col-lg-1">';
+			pc+='<div><i class="btn btn-danger btn-sm fa fa-minus minus-button substract"></i> </div>';
+			pc+='</div>';
+			pc+='</div>';
+            $(wrapper).append(pc); //add input box
+			$('.init-select2').select2();
+        }
+    });
+	
+	
+	$(wrapper).on("click", ".substract", function(e) { //user click on remove text
+			e.preventDefault();
+			//$(this).parent('div').remove();
+			$(this).parent('div').parent().parent().remove();
+			x--;
+    console.log("clicking on -");
+});
+
+</script>
+			 

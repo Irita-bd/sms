@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <title>esfei</title>
+
+    <!--Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-reset.css" rel="stylesheet" />
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style-responsive.css" rel="stylesheet" />
+	
+	
+	
+	<!--data table-->
+	<link href="css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="css/demo_page.css" rel="stylesheet" />
+    <link href="css/demo_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/DT_bootstrap.css" />
+	
+	<!--dynamic table-->
+    <link href="css/select2.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+       <section id="container">
+        <!--header start-->
+        <header class="header fixed-top clearfix">
+            <!--logo start-->
+            <div class="brand">
+                <div class="sidebar-toggle-box">
+                    <div class="fa fa-bars "></div>
+                </div>
+                <h2 class="brand-text">SMDM</h2>
+            </div>
+            <!--logo end-->
+            <!--  notification start -->
+            <!--  notification end -->
+
+            <div class="top-nav clearfix">
+                <!--search & user info start-->
+                <ul class="nav pull-right top-menu">
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="images/avatar1_small.jpg">
+                            <span class="username">John Doe</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                    <!-- right sidebar button start -->
+                    <li>
+                        <div class="toggle-right-box">
+                            <div class="fa fa-bars"></div>
+                        </div>
+                    </li>
+                    <!-- right sidebar button end -->
+                </ul>
+                <!--search & user info end-->
+            </div>
+        </header>
+        <!--header end-->
+        <aside>
+            <div id="sidebar" class="nav-collapse">
+                <!-- sidebar menu start-->
+                <div class="leftside-navigation">
+                    <ul class="sidebar-menu" id="nav-accordion">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-dashboard"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <!-- <li class="sub-menu">
+                <a href="javascript:;">
+                    <i class="fa fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+                <ul class="sub">
+                    <li><a href="#">Institute Information</a></li>
+                    <li><a href="#">Institute Section</a></li>
+                    <li><a href="#">Department Of Employee</a></li>
+                    <li><a href="#">Designation</a></li>
+                    <li><a href="#">Relagion</a></li>
+                </ul>
+            </li>-->
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="fa fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-university"></i>
+                                        <span>Institute</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="institute_details.html">Details</a>
+                                        </li>
+                                        <li><a href="institute_section.html">Section</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-users"></i>
+                                        <span>Employee</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="emp_department.html">Department of employee</a>
+                                        </li>
+                                        <li><a href="emp_designation.html">Designation</a>
+                                        </li>
+                                        <li><a href="relagion.html">Employee/Student Relagion</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-graduation-cap"></i>
+                                        <span>Academic</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="class.html">Class</a>
+                                        </li>
+                                        <li><a href="section_of_class.html">Section of class</a>
+                                        </li>
+                                        <li><a href="student_department.html">Department of student</a>
+                                        </li>
+                                        <li><a href="subject.html">Subject</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-book"></i>
+                                        <span>Exam</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="exam_type.html">Exam Type</a>
+                                        </li>
+                                        <li><a href="semester.html">Semester</a>
+                                        </li>
+                                        <li><a href="gpa.html">GPA</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="fa fa-hdd-o"></i>
+                                        <span>Store Inventory</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="item_type_and_unit.html">Add Item Type and Unit</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-envelope-o"></i>
+                                        <span>SMS/Email</span>
+                                    </a>
+                                    <ul class="sub">
+                                        <li><a href="sms_email_url.html">URL</a>
+                                        </li>
+                                        <li><a href="sms_email_sending_option.html">Sending Option</a>
+                                        </li>
+                                        <li><a href="sms_email_receiver.html.html">Receiver</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="fa fa-users"></i>
+                                <span>Employee</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="add_employee.html">Add Employee</a>
+                                </li>
+                                <li><a href="emp_list.html">Employee List</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="fa fa-user-o"></i>
+                                <span>Student</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="student_admission.html">Student Admission</a>
+                                </li>
+                                <li><a href="student_list.html">Student List</a>
+                                </li>
+                                <li><a href="student _committe_name.html">Add Student Committee Name</a>
+                                </li>
+                                <li><a href="student _committee_details.html">Add Student Committee Member</a>
+                                    <li><a href="student _club_name.html">Add Student Club Name</a>
+                                    </li>
+                                    <li><a href="student _club_details.html">Add Student Club Member</a>
+                            </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-graduation-cap"></i>
+                                    <span>Academic</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="academic_year.html">Academic year</a>
+                                    </li>
+                                    <li><a href="#">Certification</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-book"></i>
+                                    <span>Exam</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="result_generate.html">Result Generate</a>
+                                    </li>
+									 <li><a href="result_view">Result View</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+								<a href="sms_and_email.html">
+									<i class="fa fa-envelope-o"></i>
+									<span>SMS/Email</span>
+								</a>
+							</li>
+							
+                            <li>
+                                <a href="attendence.html">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    <span>Attendence</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-hdd-o"></i>
+                                    <span>Store Management</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="add_item_name.html">Add Item Name</a>
+                                    </li>
+                                    <li><a href="add_item_record.html">Item Record</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="library.html">
+                                    <i class="fa fa-book"></i>
+                                    <span>Library Management</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-hdd-o"></i>
+                                    <span>Asset Management</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="asset_type.html">Add Asset Type</a>
+                                    </li>
+                                    <li><a href="add_asset.html">Add Asset</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-money"></i>
+                                    <span>Finance</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="#">One</a>
+                                    </li>
+                                    <li><a href="#">Two</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-users"></i>
+                                    <span>Managing Committe</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="managing _committe_name.html">Add Committee Name</a>
+                                    </li>
+                                    <li><a href="managing _committee_details.html">Add Committee Member</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="javascript:;">
+                                    <i class="fa fa-file-o"></i>
+                                    <span>Report</span>
+                                </a>
+                                <ul class="sub">
+                                    <li><a href="#">One</a>
+                                    </li>
+                                    <li><a href="#">Two</a>
+                                    </li>
+                                </ul>
+                            </li>
+                    </ul>
+                </div>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <!-- page start-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <section class="panel">
+                            <header class="panel-heading">
+                                Add class wise subject
+                                <!-- <span class="tools pull-right">
+                                <a class="fa fa-chevron-down" href="javascript:;"></a>
+                                <a class="fa fa-cog" href="javascript:;"></a>
+                                <a class="fa fa-times" href="javascript:;"></a>
+                             </span> -->
+                            </header>
+                            <div class="panel-body">
+                                <div class="">
+                                    <form role="form">
+                                        <div class="row">
+                                                <div class="form-group col-lg-4">
+                                                    <label>Class <span class="required-star">*</span> </label>
+                                                    <select class="form-control init-select2" id="">
+													  <option value="volvo">Account</option>
+													  <option value="saab">Faculty</option>
+													  <option value="mercedes">IT</option>
+													</select>
+                                                </div>
+                                                <div class="form-group col-lg-4">
+                                                    <label>Subject <span class="required-star">*</span> </label>
+                                                    <input type="text" class="form-control" id="" />
+                                                </div>
+												<div class=" col-lg-12">
+													<button class="btn btn-primary" type="submit">Save</button>
+													<button class="btn btn-default" type="button">Cancel</button>
+												</div>
+                                             
+                                               
+                                          
+                                           
+                                           
+                                        </div>
+                                    </form>
+                                </div>
+							
+								  <div class="adv-table ">
+                    <table  class="display table table-bordered table-striped" id="dynamic-table" style="overflow-x:auto;overflow-y:auto;">
+                    <thead >
+                    <tr>
+                        <th>Class</th>
+						<th>Subject</th>
+                        <th >Edit</th>
+						<th >Delete</th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Tescher</td>
+						<td>Tescher</td>
+                        <td ><button type="button" class="btn btn-success btn-sm">Edit</button></td>
+						<td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+                      
+                    </tr>
+                    <tr>
+                        <td>IT</td>
+						<td>Tescher</td>
+                      <td><button type="button" class="btn btn-success btn-sm">Edit</button></td>
+						<td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+                  
+                    </tr>
+                    <tr>
+                        <td>Account</td>
+						<td>Tescher</td>
+                     <td><button type="button" class="btn btn-success btn-sm">Edit</button></td>
+						<td><button type="button" class="btn btn-danger btn-sm">Delete</button></td>
+                       
+                    </tr>
+                 
+               
+                   
+                    </tbody>
+                   
+                    </table>
+                    </div>
+
+
+                            </div>
+							
+                        </section>
+                    </div>
+                </div>
+                <!-- page end-->
+            </section>
+        </section>
+        <!--main content end-->
+		
+        <!--right sidebar start-->
+        
+        <!--right sidebar end-->
+
+    </section>
+
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!--Core js-->
+       <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+  
+
+
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_bn_BD.js"></script>
+    <!--common script init for all pages-->
+    <script src="js/scripts.js"></script>
+    <!--this page script-->
+    <script src="js/validation-init.js"></script>
+	
+
+	 <!--dynamic table-->
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="js/DT_bootstrap.js"></script>
+	<!--select 2-->
+	<script type="text/javascript" src="js/select2.min.js"></script>
+	 <script>
+		$(document).ready(function () {
+		
+			 $('#dynamic-table').DataTable();
+			 
+			 });
+  </script>
+  
+
+
+</body>
+
+</html>
